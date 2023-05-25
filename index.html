@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+     <meta name=" viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="encabezado">
+      <h1>Encriptador</h1>
+    </div>
+    </header>
+
+    <main>
+      <section class="seccionEncriptador">
+        <textarea
+          class="textarea"
+          id="text"
+          placeholder="Escribe tu texto aquí"
+        ></textarea>
+        <div class="minusculas">
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="contenedorBotones">
+          <input
+            type="button"
+            value="encriptar"
+            id="encriptador"
+            class="botonEncriptador"
+          />
+          <input
+            type="button"
+            value="Desencriptar"
+            id="desencriptar"
+            class="botonDesincreptador"
+          />
+        </div>
+      </section>
+
+      <section class="seccionResultado">
+        <div>
+          <textarea id="resultado-texto"></textarea>
+
+          <div class="contenedorImagen" id="texto-imprime">
+            <img src="img/Fondo.jpg" class="fondo" />
+            <h3 class="noMensaje" id="no_mensaje">
+              No se encontro ningun mensaje
+            </h3>
+            <p class="parra" id="parrafo">
+              Escribe el texto que desea encriptar o desencriptar
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">Desarrollado por Epifanio Mendoza Palacios</footer>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

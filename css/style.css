@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  color: #ff0000;
+}
+
+h1 {
+  padding: 5px;
+  margin-left: 90px;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+}
+
+section {
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.seccionEncriptador {
+  width: 60%;
+  margin-left: 20px;
+  background-color: #000000;
+}
+
+.seccionResultado {
+  width: 30%;
+  margin-right: 20px;
+  background-color: #191919;
+}
+
+.contenedorImagen {
+  width: 100%;
+  height: 60%;
+  padding-top: 20px;
+  background-color: #191919;
+  text-align: center;
+  border-radius: 20px;
+  color: #ff0000;
+}
+
+.noMensaje {
+  margin-top: 40px;
+}
+
+.parra {
+  margin-top: 40px;
+}
+
+.textarea {
+  width: 80%;
+  resize: none;
+  height: 60%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  outline: 0;
+  border: 0;
+  color: #ff0000;
+  background-color: #191919;
+}
+
+.minusculas {
+  color: #ff0000;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.fondo {
+  height: 304px;
+  width: 336px;
+  left: 1032px;
+  top: 283px;
+  border-radius: 20px;
+  opacity: 45%;
+}
+
+.contenedorBotones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botonEncriptador,
+.botonDesincreptador {
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botonEncriptador {
+  background-color: #ff0e0e;
+}
+
+.botonEncriptador:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #ff0e0e, 0 0 10px #ff0e0e, 0 0 30px #ff0e0e,
+    0 0 0px #ff0e0e;
+}
+
+.botonDesincreptador {
+  background-color: #ff0e0e;
+}
+
+.botonDesincreptador:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #ff0e0e, 0 0 10px #ff0e0e, 0 0 30px #ff0e0e,
+    0 0 0px #ff0e0e;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  color: #ff0000;
+  box-sizing: border-box;
+}
+
+#resultado-texto {
+  display: block;
+  width: 100%;
+  height: 600px;
+  resize: none;
+  width: 80%;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  display: none;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #191919;
+}
+
+@media screen and (max-width:480px) {
+  .encabezado, .seccionEncriptador, .seccionResultado, .pie{
+    width: 100%;
+  }
+}
