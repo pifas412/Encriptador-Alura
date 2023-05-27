@@ -157,8 +157,3 @@ footer {
   background-color: #191919;
 }
 
-@media screen and (max-width:480px) {
-  .encabezado, .seccionEncriptador, .seccionResultado, .pie{
-    width: 100%;
-  }
-}
