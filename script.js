@@ -36,12 +36,18 @@ btnDesencriptar.addEventListener("click", () => {
 });
 
 function validar() {
-  if (textIngresado.value == "") {
-    textImprimir.style.display = "none";
+  regex = /^[a-z\s]+$/;
+
+  if (regex.test(textIngresado.value)) {
+    if (textIngresado.value === "") {
+      textImprimir.style.display = "none";
+    } else {
+      imagen.style.display = "none";
+      textImprimir.innerHTML = textIngresado.value;
+      textImprimir.style.display = "block";
+      textIngresado.value = "";
+    }
   } else {
-    imagen.style.display = "none";
-    textImprimir.innerHTML = textIngresado.value;
-    textImprimir.style.display = "block";
-    textIngresado.value = "";
+    alert("La cadena contiene mayúsculas o caracteres especiales.");
   }
 }
